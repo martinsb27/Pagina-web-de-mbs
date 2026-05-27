@@ -1,0 +1,69 @@
+/* ==========================================================================
+   CSS PERSONALIZADO - MBS & POULTRY SCIENCE (IDENTIDAD PREMIUM V1.0)
+   ========================================================================== */
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Scroll Suave Nativo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animación de Aparición Gradual al Hacer Scroll (Scroll Reveal) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tarjetas de Servicios con Interacción de Transición Premium */
+.service-card {
+    transition: all 0.4s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px -10px rgba(10, 42, 31, 0.15);
+    border-bottom: 3px solid #D4AF37; /* Borde inferior Dorado al hacer Hover */
+}
+
+/* Efecto de Vidrio Esmerilado (Glassmorphism) para Menú Superior */
+.nav-scrolled {
+    background-color: rgba(10, 42, 31, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Elemento Gráfico Vectorial Inspirado en Plumas (Watermark Texturizado) */
+.bg-feather-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z' stroke='%23D4AF37' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='0.08'/%3E%3Cline x1='16' y1='8' x2='2' y2='22' stroke='%23D4AF37' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='0.08'/%3E%3Cpath d='M17.5 15H9' stroke='%23D4AF37' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='0.08'/%3E%3C/svg%3E");
+}
+
+/* Entradas de Formularios de Alta Gama Minimalista */
+.input-premium {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 0;
+    padding: 12px 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-premium:focus {
+    outline: none;
+    border-bottom: 2px solid #D4AF37;
+    box-shadow: none;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBS & Poultry Science Consultant Services SAC</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A2A1F',    // Verde Oscuro Premium
+                            gold: '#D4AF37',    // Dorado Exclusivo
+                            light: '#F8F9FA',   // Fondo Minimalista
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-brand-gold selection:text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#" class="flex flex-col group">
+                <span class="font-serif text-2xl font-bold text-white tracking-wider group-hover:text-brand-gold transition-colors">MBS</span>
+                <span class="text-[10px] text-gray-300 uppercase tracking-widest mt-1">Poultry Science Consultant</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#inicio" class="text-sm text-gray-200 hover:text-brand-gold transition-colors font-medium">Inicio</a>
+                <a href="#nosotros" class="text-sm text-gray-200 hover:text-brand-gold transition-colors font-medium">Nosotros</a>
+                <a href="#filosofia" class="text-sm text-gray-200 hover:text-brand-gold transition-colors font-medium">Misión / Visión</a>
+                <a href="#servicios" class="text-sm text-gray-200 hover:text-brand-gold transition-colors font-medium">Servicios</a>
+                <a href="#contacto" class="px-6 py-2 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 text-sm font-medium">Contacto</a>
+            </div>
+
+            <button class="md:hidden text-white hover:text-brand-gold" id="mobile-menu-btn">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-dark shadow-xl border-t border-gray-800">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="#inicio" class="text-gray-200 hover:text-brand-gold text-sm uppercase tracking-wide">Inicio</a>
+                <a href="#nosotros" class="text-gray-200 hover:text-brand-gold text-sm uppercase tracking-wide">Nosotros</a>
+                <a href="#filosofia" class="text-gray-200 hover:text-brand-gold text-sm uppercase tracking-wide">Misión / Visión</a>
+                <a href="#servicios" class="text-gray-200 hover:text-brand-gold text-sm uppercase tracking-wide">Servicios</a>
+                <a href="#contacto" class="text-brand-gold text-sm uppercase tracking-wide font-bold">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=2073&auto=format&fit=crop" alt="Avicultura Profesional" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-brand-dark bg-opacity-90 mix-blend-multiply"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto reveal active">
+            <div class="flex justify-center mb-6">
+                <i data-lucide="feather" class="w-12 h-12 text-brand-gold opacity-80"></i>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl text-white font-bold mb-6 leading-tight">
+                Soluciones Técnicas Avícolas con <span class="text-brand-gold italic">Excelencia</span> Profesional
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-light max-w-2xl mx-auto">
+                Consultoría técnica especializada de alto nivel empresarial. Optimizamos sus procesos productivos con rigor científico.
+            </p>
+            <a href="#contacto" class="inline-flex items-center space-x-3 bg-brand-gold text-brand-dark px-8 py-4 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-brand-dark transition-all duration-300">
+                <span>Solicitar Asesoría</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10 hidden md:block">
+            <i data-lucide="mouse" class="w-6 h-6 text-gray-400"></i>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-24 bg-white relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-feather-pattern opacity-50"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-3">La Consultora</h4>
+                    <h2 class="font-serif text-4xl md:text-5xl text-brand-dark mb-6">MBS & Poultry Science Consultant Services SAC</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Liderada por la especialista <strong class="text-brand-dark">Maruja Balvín Sáenz</strong>, nuestra firma destaca en el sector por proveer un servicio exclusivo de asesoría técnica avícola enfocado en la mejora continua y el éxito corporativo.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Nuestra sólida experiencia nos permite estructurar estrategias de alta confianza, fusionando el cuidado de la naturaleza con la excelencia operativa y la innovación empresarial de vanguardia.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                        <div>
+                            <h5 class="font-serif text-brand-dark text-xl font-bold mb-2">Asesoría Científica</h5>
+                            <p class="text-sm text-gray-500">Metodologías avanzadas aplicadas al campo real.</p>
+                        </div>
+                        <div>
+                            <h5 class="font-serif text-brand-dark text-xl font-bold mb-2">Confianza</h5>
+                            <p class="text-sm text-gray-500">Garantía de exclusividad y estricta confidencialidad.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative reveal">
+                    <div class="aspect-[4/5] bg-brand-light relative z-10 p-4 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1974&auto=format&fit=crop" alt="Asesoría Corporativa" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-brand-gold z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="filosofia" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 reveal">
+                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-3">Filosofía Empresarial</h4>
+                <h2 class="font-serif text-4xl text-brand-dark">Dirección y Excelencia Estratégica</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-12 shadow-sm border border-gray-100 service-card reveal">
+                    <i data-lucide="target" class="w-10 h-10 text-brand-gold mb-6"></i>
+                    <h3 class="font-serif text-2xl text-brand-dark mb-4">Misión</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Brindar soluciones técnicas eficientes y científicas para el sector avícola, garantizando la optimización de los recursos y el desarrollo sostenible de cada proyecto.
+                    </p>
+                </div>
+
+                <div class="bg-white p-12 shadow-sm border border-gray-100 service-card reveal" style="transition-delay: 0.2s;">
+                    <i data-lucide="eye" class="w-10 h-10 text-brand-gold mb-6"></i>
+                    <h3 class="font-serif text-2xl text-brand-dark mb-4">Visión</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Ser una consultora reconocida por su excelencia e innovación en el sector avícola a nivel internacional, definiendo los estándares del sector.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-feather-pattern opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                <div class="max-w-2xl">
+                    <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-3">Servicios Globales</h4>
+                    <h2 class="font-serif text-4xl md:text-5xl">Soluciones de Ingeniería Avícola</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#0e3627] p-8 hover:bg-[#124231] transition-colors border-t border-brand-dark hover:border-brand-gold reveal group">
+                    <i data-lucide="microscope" class="w-8 h-8 text-brand-gold mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-serif text-xl mb-4 text-white">Consultoría Técnica Avícola</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Análisis científico profundo enfocado en la prevención, control y estrategias de alto valor adaptadas a sus necesidades.
+                    </p>
+                </div>
+
+                <div class="bg-[#0e3627] p-8 hover:bg-[#124231] transition-colors border-t border-brand-dark hover:border-brand-gold reveal group" style="transition-delay: 0.1s;">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-brand-gold mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-serif text-xl mb-4 text-white">Optimización de Procesos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Diseño y reestructuración operativa integral dentro de las plantas, logrando la máxima eficiencia de costos y producción.
+                    </p>
+                </div>
+
+                <div class="bg-[#0e3627] p-8 hover:bg-[#124231] transition-colors border-t border-brand-dark hover:border-brand-gold reveal group" style="transition-delay: 0.2s;">
+                    <i data-lucide="users" class="w-8 h-8 text-brand-gold mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-serif text-xl mb-4 text-white">Capacitación Técnica</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Formación corporativa premium dictada por expertos para elevar las habilidades y competencias técnicas del personal operativo.
+                    </p>
+                </div>
+
+                <div class="bg-[#0e3627] p-8 hover:bg-[#124231] transition-colors border-t border-brand-dark hover:border-brand-gold reveal group" style="transition-delay: 0.3s;">
+                    <i data-lucide="clipboard-check" class="w-8 h-8 text-brand-gold mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-serif text-xl mb-4 text-white">Evaluación Sanitaria y Productiva</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Auditorías minuciosas bajo estrictos protocolos científicos internacionales para asegurar la salud biológica y los rendimientos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div class="reveal">
+                    <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-3">Atención Exclusiva</h4>
+                    <h2 class="font-serif text-4xl text-brand-dark mb-8">Establezca contacto con nuestra firma consultora.</h2>
+                    
+                    <div class="space-y-8 mt-12">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-brand-light p-3 rounded-full">
+                                <i data-lucide="mail" class="w-6 h-6 text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider font-bold mb-1">Correo Corporativo</p>
+                                <a href="mailto:mbalvins@gmail.com" class="text-brand-dark text-lg hover:text-brand-gold transition-colors">mbalvins@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-brand-light p-3 rounded-full">
+                                <i data-lucide="phone" class="w-6 h-6 text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider font-bold mb-1">Línea Directa</p>
+                                <a href="tel:+51965880629" class="text-brand-dark text-lg hover:text-brand-gold transition-colors">+51 965 880 629</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-brand-light p-3 rounded-full">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider font-bold mb-1">Ubicación Global</p>
+                                <p class="text-brand-dark text-lg">Lima, Perú</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-100 reveal" style="transition-delay: 0.2s;">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col">
+                                <input type="text" placeholder="Nombre completo" required class="input-premium text-sm text-brand-dark">
+                            </div>
+                            <div class="flex flex-col">
+                                <input type="text" placeholder="Empresa" class="input-premium text-sm text-brand-dark">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <input type="email" placeholder="Correo electrónico" required class="input-premium text-sm text-brand-dark">
+                        </div>
+                        <div class="flex flex-col">
+                            <input type="tel" placeholder="Teléfono" class="input-premium text-sm text-brand-dark">
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <textarea rows="4" placeholder="¿En qué podemos ayudarle?" required class="input-premium text-sm text-brand-dark resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-dark text-white py-4 mt-6 text-sm font-bold uppercase tracking-wider hover:bg-brand-gold transition-colors duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#061A13] text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <span class="font-serif text-2xl font-bold text-white block mb-2">MBS</span>
+                    <p class="text-sm max-w-sm">MBS & Poultry Science Consultant Services SAC. Consultoría técnica avícola de excelencia profesional.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 MBS & Poultry Science Consultant Services SAC. Todos los derechos reservados.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
